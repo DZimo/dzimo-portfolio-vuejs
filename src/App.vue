@@ -5,7 +5,7 @@ import PortfolioView from './components/PortfolioView.vue'
 
 <template>
   <header>
-    <img alt="" class="logo"  src="/dzimo-header.png" width="125" height="125" style="border-radius: 50%; margin-bottom: 1rem;" />
+    <img alt="" class="logo" src="/dzimo-header.png" width="125" height="125" style="border-radius: 50%; margin-bottom: 1rem;" />
     <div class="wrapper">
       <IntroView msg="Mohamed-Nazim BELABED" />
     </div>

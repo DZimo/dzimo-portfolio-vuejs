@@ -27,9 +27,16 @@
   </div>
 
   <PortfolioPopup v-if="modalOpen" @close="closeModal">
-    <h2>{{ selectedItem?.title }}</h2>
-    <img :src="selectedItem?.image" alt="" style="width: 100%; margin-bottom: 1rem;" />
-    <p>{{ selectedItem?.description }}</p>
+    <div style="margin: 1rem; padding-bottom: 2rem;">
+      <h2>{{ selectedItem?.title }}</h2>
+      <img :src="selectedItem?.image" alt="" style="width: 100%; margin-bottom: 1rem;" />
+      <p>{{ selectedItem?.description }}</p>
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 1rem;">
+      <a :href="selectedItem?.githubrepo" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github fa-3x"></i>
+      </a>
+    </div>
   </PortfolioPopup>
 </template>
 
@@ -44,15 +51,15 @@ const selectedItem = ref(null);
 const modalOpen = ref(false);
 
 const projects = [
-  { id: 1, title: 'LazyPinger, a fast MAUI C# Network detection and testing.', image: '/lazy_pinger_main_gui.gif', description: 'TCP/IP related network management, devices discovery, database management, UDP/TCP port server/client, CAN protcol testing.' },
-  { id: 2, title: 'An automated static taint analysis tool for Android.', image: '/unknown.png', description: 'A tool that automates more than 15 static taint anylsis Android tools, with providing benchmarks, statistics and easy comparaison, the app is cross paltform and was written in Avalonia while followding software clean architecture principles.' },
-  { id: 3, title: 'Java fault localization with tarantula', image: '/unknown.png', description: '...' },
-  { id: 4, title: 'Unity C# 2D draw to 3D X-Y-Z Coordinates shape.', image: '/unknown.png', description: '...' },
-  { id: 5, title: 'Java Automated Test suite generation using Simulated Annealing algorithms. ( Access upon request )', image: '/unknown.png', description: '...' },
-  { id: 6, title: 'Unity C# Automated map spawner with safe pool and delete.', image: '/unknown.png', description: '...' },
-  { id: 7, title: 'C++ Front end compiler for a c-style language.', image: '/unknown.png', description: '...' },
-  { id: 8, title: 'Java Dynamic analysis tool to validate patches in Java.', image: '/unknown.png', description: '...' },
-  { id: 9, title: '3D Version of haxball game.', image: '/unknown.png', description: '...' },
+  { id: 1, githubrepo: "https://github.com/DZimo/LazyPinger", title: 'LazyPinger, a fast MAUI C# Network detection and testing.', image: '/dzimo-portfolio-vuejs/lazy_pinger_main_gui.gif', description: 'TCP/IP related network management, devices discovery, database management, UDP/TCP port server/client, CAN protcol testing.' },
+  { id: 2, githubrepo: "https://github.com/DZimo/", title: 'An automated static taint analysis tool for Android.', image: '/dzimo-portfolio-vuejs/unknown.png', description: 'A tool that automates more than 15 static taint anylsis Android tools, with providing benchmarks, statistics and easy comparaison, the app is cross paltform and was written in Avalonia while followding software clean architecture principles.' },
+  { id: 3, githubrepo: "https://github.com/DZimo/faultLocalizer", title: 'Java fault localization with tarantula', image: '/dzimo-portfolio-vuejs/unknown.png', description: 'implementation of tarantula metric based code for fault localization' },
+  { id: 4, githubrepo: "https://github.com/DZimo/2Ddraw-to-3D-convertor-unity", title: 'Unity C# 2D draw to 3D X-Y-Z Coordinates shape.', image: '/dzimo-portfolio-vuejs/unity_2d_to_3d_shape.gif', description: 'A convertor from a 2D draw to 3D shapes, mesh from a single 2D draw in unity.' },
+  { id: 5, githubrepo: "https://github.com/DZimo/", title: 'Java Automated Test suite generation using Simulated Annealing algorithms. ( Access upon request )', image: '/dzimo-portfolio-vuejs/unknown.png', description: 'A framework to solve the test suite generation problem as part of the Search-Based Software Engineering Chair at the University of Passau.' },
+  { id: 6, githubrepo: "https://github.com/DZimo/mapSpawner-Tool-Unity", title: 'Unity C# Automated map spawner with safe pool and delete.', image: '/dzimo-portfolio-vuejs/unity_3d_spawner.gif', description: 'A special C# plugin to spawn your maps multiple times depending on the size and type of the map.' },
+  { id: 7, githubrepo: "https://github.com/DZimo/tinyLanguageParser", title: 'C++ Front end compiler for a c-style language.', image: '/dzimo-portfolio-vuejs/unknown.png', description: '...' },
+  { id: 8, githubrepo: "https://github.com/DZimo/iPatchValidator", title: 'Java Dynamic analysis tool to validate patches in Java.', image: '/dzimo-portfolio-vuejs/unknown.png', description: '...' },
+  { id: 9, githubrepo: "https://github.com/DZimo/", title: '3D Version of haxball game.', image: '/dzimo-portfolio-vuejs/unity_3D_haxball.jpeg', description: 'A 3D version of the famous online game haxball, built on Unity with AI multiplayer mode and online.' },
 ];
 
 const totalPages = computed(() => Math.ceil(projects.length / itemsPerPage));
@@ -80,8 +87,7 @@ const closeModal = () => {
 </script>
 
 <style scoped>
-
-.pagination{
+.pagination {
   margin: 1rem;
   align-items: center;
   align-content: center;
