@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
+    <h1 class="primary">{{ msg }}</h1>
     <h3 style="margin-bottom: 1rem;">
       Native Application and Web developer with a Master degree i was always passionate about software development and
       graphic design.

@@ -19,6 +19,11 @@ import PortfolioView from './components/PortfolioView.vue'
 <style scoped>
 header {
   line-height: 1.5;
+  align-items: center;
+  align-content: center;
+  vertical-align: middle;
+  justify-content: center; 
+  text-align: center;
 }
 
 .logo {

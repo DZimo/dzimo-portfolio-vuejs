@@ -8,9 +8,9 @@
 }
 
 a,
-.green {
+.primary {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: #4eae36;
   transition: 0.4s;
   padding: 3px;
 }
