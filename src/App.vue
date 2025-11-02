@@ -5,7 +5,7 @@ import PortfolioView from './components/PortfolioView.vue'
 
 <template>
   <header>
-    <img alt="" class="logo" src="./assets/dzimo-header.png" width="125" height="125" style="border-radius: 50%; margin-bottom: 1rem;" />
+    <img alt="" class="logo" src="@/assets/dzimo-header.png" width="125" height="125" style="border-radius: 50%; margin-bottom: 1rem;" />
     <div class="wrapper">
       <IntroView msg="Mohamed-Nazim BELABED" />
     </div>
@@ -22,7 +22,7 @@ header {
   align-items: center;
   align-content: center;
   vertical-align: middle;
-  justify-content: center; 
+  justify-content: center;
   text-align: center;
 }
 
