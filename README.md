@@ -1,2 +1,0 @@
-# DZimo portfolio VUEJS
-
