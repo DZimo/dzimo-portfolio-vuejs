@@ -22,18 +22,21 @@ import { ref, computed } from 'vue';
 import PortfolioItem from './PortfolioItem.vue';
 import PortfolioPopup from './PortfolioPopup.vue';
 
-const itemsPerPage = 4;
+const itemsPerPage = 6;
 const currentPage = ref(1);  
 const selectedItem = ref(null);
 const modalOpen = ref(false);
 
 const projects = [
-  { id: 1, title: 'LazyPinger, a fast MAUI C# Network detection and testing.', image: '/src/assets/lazy_pinger_main_gui.gif', description: 'tEST' },
+  { id: 1, title: 'LazyPinger, a fast MAUI C# Network detection and testing.', image: '/src/assets/lazy_pinger_main_gui.gif', description: 'TCP/IP related network management, devices discovery, database management, UDP/TCP port server/client, CAN protcol testing.' },
   { id: 2, title: 'An automated static taint analysis tool for Android.', image: '/src/assets/logo.svg', description: 'A tool that automates more than 15 static taint anylsis Android tools, with providing benchmarks, statistics and easy comparaison, the app is cross paltform and was written in Avalonia while followding software clean architecture principles.' },
-  { id: 3, title: 'Project 3', image: '/assets/project3.jpg', description: '...' },
-  { id: 4, title: 'Project 4', image: '/assets/project4.jpg', description: '...' },
-  { id: 5, title: 'Project 5', image: '/assets/project5.jpg', description: '...' },
-  { id: 6, title: 'Project 6', image: '/assets/project6.jpg', description: '...' },
+  { id: 3, title: 'Java fault localization with tarantula', image: '/assets/project3.jpg', description: '...' },
+  { id: 4, title: 'Unity C# 2D draw to 3D X-Y-Z Coordinates shape.', image: '/assets/project4.jpg', description: '...' },
+  { id: 5, title: 'Java Automated Test suite generation using Simulated Annealing algorithms. ( Access upon request )', image: '/assets/project5.jpg', description: '...' },
+  { id: 6, title: 'Unity C# Automated map spawner with safe pool and delete.', image: '/assets/project6.jpg', description: '...' },
+  { id: 7, title: 'C++ Front end compiler for a c-style language.', image: '/assets/project6.jpg', description: '...' },
+  { id: 8, title: 'Java Dynamic analysis tool to validate patches in Java.', image: '/assets/project6.jpg', description: '...' },
+  { id: 9, title: '3D Version of haxball game.', image: '/assets/project6.jpg', description: '...' },
 ];
 
 const totalPages = computed(() => Math.ceil(projects.length / itemsPerPage));
