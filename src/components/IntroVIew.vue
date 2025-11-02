@@ -34,6 +34,15 @@ defineProps({
         </a>
       </span>
     </span>
+    <h4 style="margin-top: 1rem;">
+      C#: Unity, WPF, Avalonia, Blazor.
+    </h4>
+    <h4 style="margin-top: 1rem;">
+      C/C++: Zephyr RTOS, PlatformIO, Arduino.
+    </h4>
+    <h4 style="margin-top: 1rem;">
+      Other: JS, VueJS, CI/CD.
+    </h4>
   </div>
 </template>
 

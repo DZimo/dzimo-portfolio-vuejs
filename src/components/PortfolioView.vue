@@ -23,13 +23,13 @@ import PortfolioItem from './PortfolioItem.vue';
 import PortfolioPopup from './PortfolioPopup.vue';
 
 const itemsPerPage = 4;
-const currentPage = ref(1);
+const currentPage = ref(1);  
 const selectedItem = ref(null);
 const modalOpen = ref(false);
 
 const projects = [
-  { id: 1, title: 'Project 1', image: '/assets/project1.jpg', description: '...' },
-  { id: 2, title: 'Project 2', image: '/assets/project2.jpg', description: '...' },
+  { id: 1, title: 'LazyPinger, a fast MAUI C# Network detection and testing.', image: '/src/assets/lazy_pinger_main_gui.gif', description: 'tEST' },
+  { id: 2, title: 'An automated static taint analysis tool for Android.', image: '/src/assets/logo.svg', description: 'A tool that automates more than 15 static taint anylsis Android tools, with providing benchmarks, statistics and easy comparaison, the app is cross paltform and was written in Avalonia while followding software clean architecture principles.' },
   { id: 3, title: 'Project 3', image: '/assets/project3.jpg', description: '...' },
   { id: 4, title: 'Project 4', image: '/assets/project4.jpg', description: '...' },
   { id: 5, title: 'Project 5', image: '/assets/project5.jpg', description: '...' },
