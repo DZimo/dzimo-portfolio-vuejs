@@ -51,6 +51,7 @@ const selectedItem = ref(null);
 const modalOpen = ref(false);
 
 const projects = [
+  { id: 0, githubrepo: "https://github.com/DZimo/WindowSill.Extensions", title: 'WindowSill, extensions for the new famous windows taskbar', image: '/dzimo-portfolio-vuejs/windowsill.webp', description: 'An advanced windows taskbar that loads dynamically extensions to enhance productivity' },
   { id: 1, githubrepo: "https://github.com/DZimo/LazyPinger", title: 'LazyPinger, a fast MAUI C# Network detection and testing.', image: '/dzimo-portfolio-vuejs/lazy_pinger_main_gui.gif', description: 'TCP/IP related network management, devices discovery, database management, UDP/TCP port server/client, CAN protcol testing.' },
   { id: 2, githubrepo: "https://github.com/DZimo/", title: 'An automated static taint analysis tool for Android.', image: '/dzimo-portfolio-vuejs/unknown.png', description: 'A tool that automates more than 15 static taint anylsis Android tools, with providing benchmarks, statistics and easy comparaison, the app is cross paltform and was written in Avalonia while followding software clean architecture principles.' },
   { id: 3, githubrepo: "https://github.com/DZimo/faultLocalizer", title: 'Java fault localization with tarantula', image: '/dzimo-portfolio-vuejs/unknown.png', description: 'implementation of tarantula metric based code for fault localization' },

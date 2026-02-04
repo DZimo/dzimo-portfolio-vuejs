@@ -1,6 +1,6 @@
 <script setup>
-import IntroView from './components/IntroView.vue'
 import PortfolioView from './components/PortfolioView.vue'
+import IntroView from './components/IntroView.vue'
 </script>
 
 <template>
