@@ -16,7 +16,7 @@ defineProps({
     </h3>
     <span class="nav-item social-icons">
       <span class="fa-stack">
-        <a href="https://www.linkedin.com/in/mohamed-nazim-belabed-b68799127/">
+        <a href="https://www.linkedin.com/in/dzimo/">
           <i class="fas fa fa-stack-2x"></i>
           <i class="fab fa-linkedin-in fa-stack-1x"></i>
         </a>
